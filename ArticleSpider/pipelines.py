@@ -4,6 +4,7 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+<<<<<<< HEAD
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.exporters import JsonItemExporter
 from twisted.enterprise import adbapi
@@ -13,11 +14,14 @@ import MySQLdb
 import MySQLdb.cursors
 
 
+=======
+>>>>>>> aeb36332caf00ea2afb1f7877770e48b9e05056c
 
 
 class ArticlespiderPipeline(object):
     def process_item(self, item, spider):
         return item
+<<<<<<< HEAD
 
 #定制自己的pipeline
 class ArticleImagePipeline(ImagesPipeline):
@@ -124,3 +128,5 @@ class MysqlTwistedPipeline(object):
 
 
 
+=======
+>>>>>>> aeb36332caf00ea2afb1f7877770e48b9e05056c

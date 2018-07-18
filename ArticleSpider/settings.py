@@ -9,8 +9,11 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+<<<<<<< HEAD
 import os
 
+=======
+>>>>>>> aeb36332caf00ea2afb1f7877770e48b9e05056c
 BOT_NAME = 'ArticleSpider'
 
 SPIDER_MODULES = ['ArticleSpider.spiders']
@@ -21,7 +24,11 @@ NEWSPIDER_MODULE = 'ArticleSpider.spiders'
 #USER_AGENT = 'ArticleSpider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
+<<<<<<< HEAD
 ROBOTSTXT_OBEY = False
+=======
+ROBOTSTXT_OBEY = False #默认是True，jobbole视频是False
+>>>>>>> aeb36332caf00ea2afb1f7877770e48b9e05056c
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -66,6 +73,7 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+<<<<<<< HEAD
 ITEM_PIPELINES = {
     # 'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
     # scrapy 在py lib 包里
@@ -90,6 +98,11 @@ IMAGES_STORE = os.path.join(project_dir,'images')
 # IMAGES_MIN_HEIGHT = 100
 # IMAGES_MIN_WIDTH = 100
 
+=======
+#ITEM_PIPELINES = {
+#    'ArticleSpider.pipelines.ArticlespiderPipeline': 300,
+#}
+>>>>>>> aeb36332caf00ea2afb1f7877770e48b9e05056c
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -111,9 +124,12 @@ IMAGES_STORE = os.path.join(project_dir,'images')
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+<<<<<<< HEAD
 
 
 MYSQL_HOST = "localhost"
 MYSQL_DBNAME = "Jobbole_spider"
 MYSQL_USER = "root"
 MYSQL_PASSWORD = "root"
+=======
+>>>>>>> aeb36332caf00ea2afb1f7877770e48b9e05056c
